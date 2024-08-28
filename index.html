@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <picture>
+                <source media="(min-width: 769px)" srcset="images/logo_desktop.png" type="image/png">
+                <img src="images/logo_tablet.png" alt="logo" class="logo">
+            </picture>
+        </nav>
+    </header>
+
+    <main class="main_content">
+        <section class="section_encode-decode">
+            
+            <div class="field-of-text">
+                <textarea name="text" id="text" placeholder="Digite seu texto"></textarea>
+                <p class="warning"><img src="images/bi_exclamation-circle-fill.png"> Apenas letras minúsculas e sem acento.</p>
+                <div class="encode-decode_buttons">
+                    <button class="button" onclick="encode()">Criptografar</button>
+                    <button class="button" onclick="decode()">Descriptografar</button>
+                </div>
+            </div>
+            <div class="field-of-result" id="result">
+                <img src="images/high_quality_products.svg" alt="Imagem de um homem com uma lupa observando um diamante" id="image">
+                <div class="informations">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
